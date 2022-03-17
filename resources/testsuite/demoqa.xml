@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Daily preconditions" verbose="1">
+    <parameter name="env" value="demoqa"/>
+    <parameter name="testname" value="Demoqa Elements"/>
+    <parameter name="description" value="Test Demoqa Elements"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="path" value="https://demoqa.com"/>
+    <listeners>
+        <listener class-name="framework.utils.listeners.TestNGListener"/>
+    </listeners>
+
+    <test name="DFleetHome">
+        <parameter name="testname" value="DFleetHome"/>
+        <parameter name="testdata" value="demoqa"/>
+        <classes>
+            <class name="tests.DemoqaHomeTest"/>
+        </classes>
+    </test>
+
+
+
+</suite>
